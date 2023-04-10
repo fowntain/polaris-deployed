@@ -1,4 +1,4 @@
-$('#loadnav').load(`${location.protocol}//${location.host}/html/nav.html`);
+$('#loadnav').load(`${location.protocol}//${location.host}/misc/nav.html`);
 
 if (!sessionStorage.getItem('loaderPlayed')) {
   setTimeout(function() {
