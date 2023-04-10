@@ -81,34 +81,37 @@
 const urlList = [
   "https://d.rubialt.repl.co/",
   "https://canvas.luisotero5.repl.co/",
-  "https://dq-sqwdaswqd.rubialt.repl.co/",
-  "https://dqs.rubialt.repl.co/",
-  "https://ddddq-wwws.rubialt.repl.co/",
   "https://uv-1.parmeetbagri.repl.co/"
 ];
 window.location.replace(urlList[Math.floor(Math.random() * urlList.length)]);
 
       </script> -->
       <div class="dropdown" style="top: 13vh;position: absolute;">
-  <button onclick="dropdown()" class="dropbtn">Select Unblocker</button>
-  <button onclick="document.getElementById('unbDropper').classList.toggle('show');" class="dropbtn">Select Unblocker</button>
-  <div id="unbDropper" class="dropdown-content">
-    <a href="#">Unb 1</a>
-    <a href="#">Unb 2</a>
-    <a href="#">Unb 3</a>
-  </div>
-</div>
+        <button onclick="dropdown()" class="dropbtn">Select Unblocker</button>
+        <button onclick="document.getElementById('unbDropper').classList.toggle('show');" class="dropbtn">Select Host</button>
+        <div id="unbDropper" class="dropdown-content">
+          <a href="#">Replit</a>
+          <a href="#">Koyeb</a>
+          <a href="#">Heroku</a>
+          <a href="#">Cyclic</a>
+          <a href="#">Azure</a>
+          <a href="#">IBM Cloud</a>
+          <a href="#">Amplify</a>
+          <a href="#">Railway</a>
+          <a href="#">Render</a>
+        </div>
+      </div>
 
     <script>
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) openDropdown.classList.remove('show');
-    }
-  }
-}
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          let dropdowns = document.getElementsByClassName("dropdown-content");
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) openDropdown.classList.remove('show');
+          };
+        };
+      };
     </script>
     </div>
   </body>
