@@ -67,7 +67,46 @@
     <!--orca made for test-->
 
     <div id="cards-container"></div>
-    <script src="/assets/games/script.js"></script>
+   <script>
+      const data = {
+        "cards": [
+          {
+            "name": "Card 3",
+            "value": "Value 3"
+          },
+          {
+            "name": "Card 2",
+            "value": "Value 1"
+          },
+           {
+            "name": "Card 6",
+            "value": "Value 1"
+          },
+           {
+            "name": "Card 4",
+            "value": "Value 1"
+          },
+          {
+            "name": "Card 8",
+            "value": "Value 2"
+          }
+        ]
+      };
+
+      data.cards.sort((a, b) => a.name.localeCompare(b.name));
+
+      const cardsHtml = data.cards.map(card => `
+        <div class="card">
+          <h3>${card.name}</h3>
+          <p>${card.value}</p>
+        </div>
+      `).join('');
+
+      // Add the card HTML to the document
+      const container = document.getElementById('cards-container');
+      container.innerHTML = cardsHtml;
+    
+</script>
 
     <script>
       const spinner = document.getElementById("spinner-container");
