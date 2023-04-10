@@ -77,7 +77,7 @@
       </div>
       <script src="/js/sidebar/sidebar.js"></script>
       <!--end sidebar-->
-      <script>
+      <!-- <script>
 const urlList = [
   "https://d.rubialt.repl.co/",
   "https://canvas.luisotero5.repl.co/",
@@ -88,7 +88,28 @@ const urlList = [
 ];
 window.location.replace(urlList[Math.floor(Math.random() * urlList.length)]);
 
-      </script>
+      </script> -->
+      <div class="dropdown" style="top: 13vh;position: absolute;">
+  <button onclick="dropdown()" class="dropbtn">Select Unblocker</button>
+  <button onclick="document.getElementById('unbDropper').classList.toggle('show');" class="dropbtn">Select Unblocker</button>
+  <div id="unbDropper" class="dropdown-content">
+    <a href="#">Unb 1</a>
+    <a href="#">Unb 2</a>
+    <a href="#">Unb 3</a>
+  </div>
+</div>
+
+    <script>
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) openDropdown.classList.remove('show');
+    }
+  }
+}
+    </script>
     </div>
   </body>
 </html>
