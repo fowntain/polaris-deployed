@@ -25,7 +25,7 @@
 .navbar {
   box-shadow: 0vh 0.75vh 1.6vh 0.6vh rgba(0, 0, 0, .5);
   position: fixed;
-  width: 105%;
+  width: 100%;
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   z-index: 100;
