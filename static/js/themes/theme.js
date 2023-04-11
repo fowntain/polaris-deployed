@@ -1,19 +1,25 @@
-var defaultStylesheet = "/css/themes/theme-flamingo.css";
+const themes = [
+  'flamingo',
+  'crimsion',
+  'dark',
+  'frost'
+];
 
-function changeStylesheet(newStylesheet) {
-  var stylesheet = document.getElementById("stylesheet");
-  stylesheet.setAttribute("href", newStylesheet);
-  localStorage.setItem("selectedStylesheet", newStylesheet);
+function changeTheme(theme) {
+  if (themes.includes(theme)) {
+    document.body.setAttribute('data-theme', theme);
+  } else {
+    alert('That is not a theme');
+  }
 }
 
 window.addEventListener('load', function() {
-  var selectedStylesheet = localStorage.getItem("selectedStylesheet");
-  if (selectedStylesheet) {
-    var stylesheet = document.getElementById("stylesheet");
-    stylesheet.setAttribute("href", selectedStylesheet);
+  var theme = localStorage.getItem('theme');
+
+  if (theme) {
+    changeTheme(theme);
   } else {
-    var stylesheet = document.getElementById("stylesheet");
-    stylesheet.setAttribute("href", defaultStylesheet);
-    localStorage.setItem("selectedStylesheet", defaultStylesheet);
+    changeTheme('flamingo');
+    localStorage.setItem('theme', 'flamingo');
   }
 });

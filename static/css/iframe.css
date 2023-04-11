@@ -1,12 +1,15 @@
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   font-family: Arial;
 }
-p{
+
+p {
   margin: 0;
 }
-#game-frame{
+
+#game-frame {
   margin: 0 auto;
   margin-top: 15vh;
   display: block;
@@ -16,7 +19,8 @@ p{
   border-radius: 1.65vh 1.65vh 0vh 0vh;
   box-shadow: 0vh 0.25vh 1vh 0vh black;
 }
-#game-options{
+
+#game-options {
   max-width: 60%;
   margin: 0 auto;
   border: 1vh solid black;
@@ -27,24 +31,29 @@ p{
   background-color: #000000;
   box-shadow: 0vh 0.25vh 1vh 0vh black;
 }
-#game-options > b {
+
+#game-options>b {
   display: inline-block;
 }
-.icons-options{
+
+.icons-options {
   padding-right: 1.5vh;
   padding-top: 0.2vh;
   margin: 0;
   display: inline-block;
   float: right;
 }
-.game-name-icon{
+
+.game-name-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.logo-options{
+
+.logo-options {
   color: #ffffff;
 }
-#game-icon-sm{
+
+#game-icon-sm {
   border-radius: 0.5vh;
 }

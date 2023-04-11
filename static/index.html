@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="/css/main/main.css">
-    <link rel="stylesheet" href="/css/buttons/buttons.css">
-    <link rel="stylesheet" href="/css/navbar/navbar.css">
-    <link rel="stylesheet" href="/css/sidebar/sidebar.css">
-    <!--title and favicon cloak-->
-    <title id="page-title">Polaris</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!--script for theme-->
-    <script src="/js/themes/theme.js"></script>
-    <!--css link that gets changed for theme-->
-    <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css">
-    <!--fade in effect-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/effects/fadein.js"></script>
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
-  </head>
-   <body>
-    <div id="loader">
-      <h1>Polaris</h1>
-      <div class="loader"></div>
+
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="/js/themes/theme.js"></script>
+  <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/effects/fadein.js"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <title id="page-title">Polaris</title>
+</head>
+
+<body data-theme="flamingo">
+  <div id="loader">
+    <h1>Polaris</h1>
+    <div class="loader"></div>
+  </div>
+
+  <div id="background">
+    <div id="loadnav"></div>
+    <script src="/js/misc/all.js"></script>
+    <script src="/js/navbar/navbar.js"></script>
+    <script src="/js/sidebar/sidebar.js"></script>
+    <div class="mainpage-items">
+      <button class="mainpageimage-button">
+        <img src="/assets/featured-game-images/placeholder.png" alt="Button Image">
+      </button>
     </div>
-    
-     <div id="background">
-       <div id="loadnav"></div>
-       <script src="/js/misc/all.js"></script> <!-- very cool loader -->
-       <script src="/js/navbar/navbar.js"></script>
-       <script src="/js/sidebar/sidebar.js"></script>
-        <div class="mainpage-items">
-           <button class="mainpageimage-button">
-              <img src="/assets/featured-game-images/placeholder.png" alt="Button Image">
-           </button>
-         </div>
-         <br>
-         <div class="mainpage-box">
-           <p class="mainpage-text"><span class="bolded">Welcome to Polaris</span><br>Your gateway to games and beyond!</p>
-           <br>
-           <button class="themebutton" onclick="credits()">Credits</button>
-         </div>
-       </div>
-     </div>
-     <div id="credits">
-       <div class="close" onclick="closeCredits()">
+    <br>
+    <div class="mainpage-box">
+      <p class="mainpage-text"><span class="bolded">Welcome to Polaris</span><br>Your gateway to games and beyond!</p>
+      <br>
+      <button class="themebutton" onclick="credits()">Credits</button>
+    </div>
+  </div>
+  </div>
+  <div id="credits">
+    <div class="close" onclick="closeCredits()">
       <div id="clickbox"></div>
-          <p>test</p>
-          </div>
-   </body>
+      <p>test</p>
+    </div>
+</body>
+
 </html>

@@ -1,217 +1,215 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="/css/main/spinner.css" />
-    <link rel="stylesheet" href="/css/main/main.css" />
-    <link rel="stylesheet" href="/css/buttons/buttons.css" />
-    <link rel="stylesheet" href="/css/navbar/navbar.css" />
-    <link rel="stylesheet" href="/css/sidebar/sidebar.css" />
-    <link rel="stylesheet" href="/css/buttons/cards.css" />
-    <!--title and favicon cloak-->
-    <title id="page-title">Polaris</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/sidebar/faviconcloak.js"></script>
-    <script src="/js/sidebar/titlecloak.js"></script>
-    <!--script for theme-->
-    <script src="/js/themes/theme.js"></script>
-    <!--css link that gets changed for theme-->
-    <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css" />
-    <!--fade in effect-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/effects/fadein.js"></script>
-    <style>
-      body {
-        opacity: 0.5;
-        transition: opacity 0.25s ease-in-out;
-      }
-    </style>
-    <!--hamburguer-->
-  </head>
-  <body>
-    <div id="background">
-      <!--navbar-->
-       <div id="loadnav"></div>
-           <script src="/js/misc/all.js"></script> <!-- very cool loader -->
+
+<head>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/sidebar/faviconcloak.js"></script>
+  <script src="/js/sidebar/titlecloak.js"></script>
+  <script src="/js/themes/theme.js"></script>
+  <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/effects/fadein.js"></script>
+
+  <title id="page-title">Polaris</title>
+
+  <style>
+    body {
+      opacity: 0.5;
+      transition: opacity 0.25s ease-in-out;
+    }
+  </style>
+</head>
+
+<body data-theme="flamingo">
+  <div id="background">
+    <div id="loadnav"></div>
+    <script src="/js/misc/all.js"></script>
     <script src="/js/navbar/navbar.js"></script>
-      <!--end navbar-->
-      <!--sidebar-->
-      <div class="sidebar">
-        <h1 class="sidebar-header">Themes</h1>
-        <div class="menu">
-          <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-flamingo.css')">Flamingo</button>
-          <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-dark.css')">Dark</button>
-          <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-frost.css')">Frost</button>
-          <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-crimson.css')">Crimson</button>
-          <script src="/js/themes/theme.js"></script>
-        </div>
-        <hr class="rounded" />
-        <h1 class="sidebar-header">Cloaks</h1>
-        <div class="menu">
-          <button class="themebutton" onclick="changeTitle('Google')" data-favicon="/assets/fonts/icons/Google.ico">Google</button>
-          <button class="themebutton" onclick="changeTitle('Canvas')" data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
-          <button class="themebutton" onclick="changeTitle('Drive')" data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
-          <button class="themebutton" onclick="changeTitle('Gmail')" data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
-        </div>
-        <div class="menu">
-          <button style="width: 15vh; margin-top: 40vh;" class="themebutton" onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')" data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
-        </div>
+    <div class="sidebar">
+      <h1 class="sidebar-header">Themes</h1>
+      <div class="menu">
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-flamingo.css')">Flamingo</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-dark.css')">Dark</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-frost.css')">Frost</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-crimson.css')">Crimson</button>
+        <script src="/js/themes/theme.js"></script>
       </div>
-      <script src="/js/sidebar/sidebar.js"></script>
-      <!--end sidebar-->
-
-      <div class="cardcontainer" id="card-container">
-
-        <div id="spinner-container"></div>
-        <div id="cards-container"></div>
-
+      <hr class="rounded" />
+      <h1 class="sidebar-header">Cloaks</h1>
+      <div class="menu">
+        <button class="themebutton" onclick="changeTitle('Google')"
+          data-favicon="/assets/fonts/icons/Google.ico">Google</button>
+        <button class="themebutton" onclick="changeTitle('Canvas')"
+          data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
+        <button class="themebutton" onclick="changeTitle('Drive')"
+          data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
+        <button class="themebutton" onclick="changeTitle('Gmail')"
+          data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
       </div>
+      <div class="menu">
+        <button style="width: 15vh; margin-top: 40vh;" class="themebutton"
+          onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')"
+          data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
+      </div>
+    </div>
+    <script src="/js/sidebar/sidebar.js"></script>
+    <!--end sidebar-->
+
+    <div class="cardcontainer" id="card-container">
+
+      <div id="spinner-container"></div>
+      <div id="cards-container"></div>
 
     </div>
-    <script src="/js/effects/cardhover.js"></script>
-    <!--orca made for test-->
 
-   <script>
-      const data = {
-        "cards": [
-          {
-            "name": "Card 3",
-            "value": "Value 3"
-          },
-          {
-            "name": "Card 2",
-            "value": "Value 1"
-          },
-           {
-            "name": "Card 6",
-            "value": "Value 1"
-          },
-           {
-            "name": "Card 4",
-            "value": "Value 1"
-          },
-          {
-            "name": "Card 8",
-            "value": "Value 2"
-          }
-        ]
-      };
+  </div>
+  <script src="/js/effects/cardhover.js"></script>
+  <!--orca made for test-->
 
-      data.cards.sort((a, b) => a.name.localeCompare(b.name));
+  <script>
+    const data = {
+      "cards": [
+        {
+          "name": "Card 3",
+          "value": "Value 3"
+        },
+        {
+          "name": "Card 2",
+          "value": "Value 1"
+        },
+        {
+          "name": "Card 6",
+          "value": "Value 1"
+        },
+        {
+          "name": "Card 4",
+          "value": "Value 1"
+        },
+        {
+          "name": "Card 8",
+          "value": "Value 2"
+        }
+      ]
+    };
 
-      const cardsHtml = data.cards.map(card => `
+    data.cards.sort((a, b) => a.name.localeCompare(b.name));
+
+    const cardsHtml = data.cards.map(card => `
         <div class="card">
           <h3>${card.name}</h3>
           <p>${card.value}</p>
         </div>
       `).join('');
 
-      // Add the card HTML to the document
-      const container = document.getElementById('cards-container');
-      container.innerHTML = cardsHtml;
-    
-</script>
+    // Add the card HTML to the document
+    const container = document.getElementById('cards-container');
+    container.innerHTML = cardsHtml;
 
-    <script>
-      const spinner = document.getElementById("spinner-container");
-spinner.innerHTML = '<div class="spinner"></div>';
+  </script>
 
-fetch("/assets/games/games.json")
-  .then((response) => response.json())
-  .then((data) => {
-  const ordered = Object.keys(data).sort().reduce(
-  (obj, key) => { 
-    obj[key] = data[key]; 
-    return obj;
-  }, 
-  {}
-);
-  data = ordered;
-  
-  
-    const container = document.getElementById("card-container");
+  <script>
+    const spinner = document.getElementById("spinner-container");
+    spinner.innerHTML = '<div class="spinner"></div>';
 
-    for (const game of data) {
-      const card = document.createElement("div");
-      card.classList.add("card");
+    fetch("/assets/games/games.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const ordered = Object.keys(data).sort().reduce(
+          (obj, key) => {
+            obj[key] = data[key];
+            return obj;
+          },
+          {}
+        );
+        data = ordered;
 
-      const link = document.createElement("a");
-      const image = document.createElement("img");
-      image.classList.add("cardimage");
-      image.src = game.image;
 
-      const name = document.createElement("p");
-      name.classList.add("cardname");
-      name.textContent = game.name;
+        const container = document.getElementById("card-container");
 
-      link.appendChild(image);
-      link.appendChild(name);
-      card.appendChild(link);
+        for (const game of data) {
+          const card = document.createElement("div");
+          card.classList.add("card");
 
-      container.appendChild(card);
-    }
+          const link = document.createElement("a");
+          const image = document.createElement("img");
+          image.classList.add("cardimage");
+          image.src = game.image;
 
-    const tiltEffectSettings = {
-  max: 12, // max tilt rotation (degrees (deg))
-  perspective: 1000, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
-  scale: 1.05, // transform scale - 2 = 200%, 1.5 = 150%, etc..
-  speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
-  easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
-};
+          const name = document.createElement("p");
+          name.classList.add("cardname");
+          name.textContent = game.name;
 
-const cards = document.querySelectorAll(".card");
+          link.appendChild(image);
+          link.appendChild(name);
+          card.appendChild(link);
 
-cards.forEach(card => {
-  card.addEventListener("mouseenter", cardMouseEnter);
-  card.addEventListener("mousemove", cardMouseMove);
-  card.addEventListener("mouseleave", cardMouseLeave);
-});
+          container.appendChild(card);
+        }
 
-function cardMouseEnter(event) {
-  setTransition(event);
-}
+        const tiltEffectSettings = {
+          max: 12, // max tilt rotation (degrees (deg))
+          perspective: 1000, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
+          scale: 1.05, // transform scale - 2 = 200%, 1.5 = 150%, etc..
+          speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
+          easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
+        };
 
-function cardMouseMove(event) {
-  const card = event.currentTarget;
-  const cardWidth = card.offsetWidth;
-  const cardHeight = card.offsetHeight;
-  const centerX = card.offsetLeft + cardWidth/2;
-  const centerY = card.offsetTop + cardHeight/2;
-  const mouseX = event.clientX - centerX;
-  const mouseY = event.clientY - centerY;
-  const rotateXUncapped = (+1)*tiltEffectSettings.max*mouseY/(cardHeight/2);
-  const rotateYUncapped = (-1)*tiltEffectSettings.max*mouseX/(cardWidth/2);
-  const rotateX = rotateXUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max : 
-                  (rotateXUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateXUncapped);
-  const rotateY = rotateYUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max : 
-                  (rotateYUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateYUncapped);
+        const cards = document.querySelectorAll(".card");
 
-  card.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) 
+        cards.forEach(card => {
+          card.addEventListener("mouseenter", cardMouseEnter);
+          card.addEventListener("mousemove", cardMouseMove);
+          card.addEventListener("mouseleave", cardMouseLeave);
+        });
+
+        function cardMouseEnter(event) {
+          setTransition(event);
+        }
+
+        function cardMouseMove(event) {
+          const card = event.currentTarget;
+          const cardWidth = card.offsetWidth;
+          const cardHeight = card.offsetHeight;
+          const centerX = card.offsetLeft + cardWidth / 2;
+          const centerY = card.offsetTop + cardHeight / 2;
+          const mouseX = event.clientX - centerX;
+          const mouseY = event.clientY - centerY;
+          const rotateXUncapped = (+1) * tiltEffectSettings.max * mouseY / (cardHeight / 2);
+          const rotateYUncapped = (-1) * tiltEffectSettings.max * mouseX / (cardWidth / 2);
+          const rotateX = rotateXUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+            (rotateXUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateXUncapped);
+          const rotateY = rotateYUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+            (rotateYUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateYUncapped);
+
+          card.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) 
                           scale3d(${tiltEffectSettings.scale}, ${tiltEffectSettings.scale}, ${tiltEffectSettings.scale})`;
-}
+        }
 
-function cardMouseLeave(event) {
-  event.currentTarget.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-  setTransition(event);
-}
+        function cardMouseLeave(event) {
+          event.currentTarget.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+          setTransition(event);
+        }
 
-function setTransition(event) {
-  const card = event.currentTarget;
-  clearTimeout(card.transitionTimeoutId);
-  card.style.transition = `transform ${tiltEffectSettings.speed}ms ${tiltEffectSettings.easing}`;
-  card.transitionTimeoutId = setTimeout(() => {
-    card.style.transition = "";
-  }, tiltEffectSettings.speed);
-}
+        function setTransition(event) {
+          const card = event.currentTarget;
+          clearTimeout(card.transitionTimeoutId);
+          card.style.transition = `transform ${tiltEffectSettings.speed}ms ${tiltEffectSettings.easing}`;
+          card.transitionTimeoutId = setTimeout(() => {
+            card.style.transition = "";
+          }, tiltEffectSettings.speed);
+        }
 
-  
-    spinner.remove();
-  })
-  .catch((error) => {
-    spinner.remove();
-    alert("Error: " + error);
-    console.error(error);
-  });
-   </script>
-  </body>
+
+        spinner.remove();
+      })
+      .catch((error) => {
+        spinner.remove();
+        alert("Error: " + error);
+        console.error(error);
+      });
+  </script>
+</body>
+
 </html>

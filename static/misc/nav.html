@@ -21,52 +21,57 @@
     <h1 class="logo">Polaris</h1>
   </div>
 </nav>
-<!--end navbar-->
-<!--sidebar-->
- <div class="sidebar">
-     <h1 class="sidebar-header">Themes</h1>
-      <div class="menu">
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-flamingo.css')">Flamingo</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-dark.css')">Dark</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-frost.css')">Frost</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-crimson.css')">Crimson</button>
-        <script src="/js/themes/theme.js"></script>
-       </div>
-       <hr class="rounded">
-       <h1 class="sidebar-header">Cloaks</h1>
-      <div class="menu">
-        <button class="themebutton" onclick="changeTitle('Google')" data-favicon="/assets/fonts/icons/Google.ico">Google</button>
-        <button class="themebutton" onclick="changeTitle('Canvas')" data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
-        <button class="themebutton" onclick="changeTitle('Drive')" data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
-        <button class="themebutton" onclick="changeTitle('Gmail')" data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
-       </div>
-       <script>
-        function changeTitle(newTitle) {
-          document.getElementById('page-title').innerHTML = newTitle;
-          localStorage.setItem('pageTitle', newTitle);
-        }
-        window.onload = function() {
-          var savedTitle = localStorage.getItem('pageTitle');
-          if (savedTitle) {
-            document.getElementById('page-title').innerHTML = savedTitle;
-          }
-        }                                           
-       </script>
-       <script>
-        $(document).ready(function () {
-          $("button").click(function () {
-              var favicon = $(this).data("favicon");
-              $("link[rel='icon']").attr("href", favicon);
-              localStorage.setItem("favicon", favicon);
-          });
 
-          var fav = localStorage.getItem("favicon");
-          if (fav !== null) {
-              $("link[rel='icon']").attr("href", fav);
-          }
-        });
-       </script>
-       <div class="menu"> 
-         <button style="width:15vh; margin-top: 40vh;" class="themebutton" onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')" data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
-       </div>
-     </div>
+<div class="sidebar">
+  <h1 class="sidebar-header">Themes</h1>
+  <div class="menu">
+    <button class="themebutton" onclick="changeTheme('flamingo')">Flamingo</button>
+    <button class="themebutton" onclick="changeTheme('dark')">Dark</button>
+    <button class="themebutton" onclick="changeTheme('frost')">Frost</button>
+    <button class="themebutton" onclick="changeTheme('crimsion')">Crimson</button>
+    <script src="/js/themes/theme.js"></script>
+  </div>
+  <hr class="rounded">
+  <h1 class="sidebar-header">Cloaks</h1>
+  <div class="menu">
+    <button class="themebutton" onclick="changeTitle('Google')"
+      data-favicon="/assets/fonts/icons/Google.ico">Google</button>
+    <button class="themebutton" onclick="changeTitle('Canvas')"
+      data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
+    <button class="themebutton" onclick="changeTitle('Drive')"
+      data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
+    <button class="themebutton" onclick="changeTitle('Gmail')"
+      data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
+  </div>
+  <script>
+    function changeTitle(newTitle) {
+      document.getElementById('page-title').innerHTML = newTitle;
+      localStorage.setItem('pageTitle', newTitle);
+    }
+    window.onload = function () {
+      var savedTitle = localStorage.getItem('pageTitle');
+      if (savedTitle) {
+        document.getElementById('page-title').innerHTML = savedTitle;
+      }
+    }                                           
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        var favicon = $(this).data("favicon");
+        $("link[rel='icon']").attr("href", favicon);
+        localStorage.setItem("favicon", favicon);
+      });
+
+      var fav = localStorage.getItem("favicon");
+      if (fav !== null) {
+        $("link[rel='icon']").attr("href", fav);
+      }
+    });
+  </script>
+  <div class="menu">
+    <button style="width:15vh; margin-top: 40vh;" class="themebutton"
+      onclick="changeTitle('Polaris');changeTheme('flamingo')"
+      data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
+  </div>
+</div>

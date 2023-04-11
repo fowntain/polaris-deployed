@@ -22,16 +22,16 @@ function cardMouseMove(event) {
   const card = event.currentTarget;
   const cardWidth = card.offsetWidth;
   const cardHeight = card.offsetHeight;
-  const centerX = card.offsetLeft + cardWidth/2;
-  const centerY = card.offsetTop + cardHeight/2;
+  const centerX = card.offsetLeft + cardWidth / 2;
+  const centerY = card.offsetTop + cardHeight / 2;
   const mouseX = event.clientX - centerX;
   const mouseY = event.clientY - centerY;
-  const rotateXUncapped = (+1)*tiltEffectSettings.max*mouseY/(cardHeight/2);
-  const rotateYUncapped = (-1)*tiltEffectSettings.max*mouseX/(cardWidth/2);
-  const rotateX = rotateXUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max : 
-                  (rotateXUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateXUncapped);
-  const rotateY = rotateYUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max : 
-                  (rotateYUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateYUncapped);
+  const rotateXUncapped = (+1) * tiltEffectSettings.max * mouseY / (cardHeight / 2);
+  const rotateYUncapped = (-1) * tiltEffectSettings.max * mouseX / (cardWidth / 2);
+  const rotateX = rotateXUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+    (rotateXUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateXUncapped);
+  const rotateY = rotateYUncapped < -tiltEffectSettings.max ? -tiltEffectSettings.max :
+    (rotateYUncapped > tiltEffectSettings.max ? tiltEffectSettings.max : rotateYUncapped);
 
   card.style.transform = `perspective(${tiltEffectSettings.perspective}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) 
                           scale3d(${tiltEffectSettings.scale}, ${tiltEffectSettings.scale}, ${tiltEffectSettings.scale})`;
@@ -50,4 +50,3 @@ function setTransition(event) {
     card.style.transition = "";
   }, tiltEffectSettings.speed);
 }
-
