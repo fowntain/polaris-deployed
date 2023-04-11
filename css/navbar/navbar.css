@@ -189,18 +189,3 @@
   }
 }
 
-.navhighlight {
-}
-
-.navhighlight:after {
-  transition: all ease-in-out .6s;
-  border-bottom: 0.5vh solid rgba(0, 0, 0, .5);
-  width: 0;
-}
-
-
-.navhighlight:hover:after {
-  width: 100%
-}
-
-
