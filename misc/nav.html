@@ -40,6 +40,20 @@
         <button class="themebutton" onclick="changeTitle('Drive')" data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
         <button class="themebutton" onclick="changeTitle('Gmail')" data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
        </div>
+       <script>
+       $(document).ready(function () {
+          $("button").click(function () {
+              var favicon = $(this).data("favicon");
+              $("link[rel='icon']").attr("href", favicon);
+              localStorage.setItem("favicon", favicon);
+          });
+
+          var fav = localStorage.getItem("favicon");
+          if (fav !== null) {
+              $("link[rel='icon']").attr("href", fav);
+          }
+       });
+       </script>
        <div class="menu"> 
          <button style="width:15vh; margin-top: 40vh;" class="themebutton" onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')" data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
        </div>
