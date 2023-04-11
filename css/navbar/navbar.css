@@ -190,11 +190,17 @@
 }
 
 .navhighlight {
-  
 }
 
-.navhighlight:hover {
+.navhighlight:after {
+  transition: all ease-in-out .6s;
   border-bottom: 0.5vh solid rgba(0, 0, 0, .5);
-  transition: border-width 0.5s ease-in-out;
-  transition-timing-function: cubic-bezier(0,0,0,1)
+  width: 0;
 }
+
+
+.navhighlight:hover:after {
+  width: 100%
+}
+
+
