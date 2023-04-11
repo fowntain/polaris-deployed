@@ -189,3 +189,12 @@
   }
 }
 
+.navhighlight {
+  
+}
+
+.navhighlight:hover {
+  border-bottom: 3px solid #f59e0b;
+  transition: width .3s;
+  transition-timing-function: cubic-bezier(0,0,0,1)
+}
