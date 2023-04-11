@@ -1,0 +1,13 @@
+{
+  "name": "polaris-v1",
+  "description": "the next generation of online bypassing.",
+  "version": "6.9",
+  "main": "index.js",
+  "keywords": [
+    "ultraviolet",
+    "unblock"
+  ],
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
