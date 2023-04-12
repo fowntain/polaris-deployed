@@ -32,7 +32,7 @@ a {
     color: #fff;
     border-radius: 4vh;
     box-shadow: 0vh 0.75vh 1.5vh 0vh black;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 h1 {
@@ -76,7 +76,7 @@ input::placeholder {
 }
 
 .mainpage-box {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 2vh;
     margin: auto;
     width: 30vh;
