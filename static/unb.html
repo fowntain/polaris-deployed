@@ -5,12 +5,11 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="/js/misc/all.js"></script>
-  <script src="/js/sidebar/faviconcloak.js"></script>
-  <script src="/js/sidebar/titlecloak.js"></script>
-  <script src="/js/themes/theme.js"></script>
-  <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css" />
-  <script src="/js/effects/fadein.js"></script>
+  <script src="/js/all.js"></script>
+  <script src="/js/faviconcloak.js"></script>
+  <script src="/js/titlecloak.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/fadein.js"></script>
 
   <title>Polaris</title>
 
@@ -25,9 +24,21 @@
 <body data-theme="flamingo">
   <div id="background">
     <div id="loadnav"></div>
-    <script src="/js/misc/all.js"></script>
-    <script src="/js/navbar/navbar.js"></script>
+    <div class="content">
+      <h1>Unblocker</h1>
+      <form>
+        <input placeholder="Search Query or URL" type="text" id="url">
+      </form>
+    </div>
   </div>
+
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/uv/uv-sw.js"></script>
+  <script src="/js/unb.js"></script>
+  <script src="/js/all.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/sidebar.js"></script>
 </body>
 
 </html>

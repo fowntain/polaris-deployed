@@ -7,6 +7,40 @@
 @import url('/css/themes.css');
 @import url('/css/cards.css');
 
+* {
+    font-family: Montserrat;
+    user-select: none;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    border: none;
+    font-size: 30px;
+    border-radius: 100px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .mainpage-items {
     display: flex;
     justify-content: center;

@@ -5,12 +5,11 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="/js/sidebar/faviconcloak.js"></script>
-  <script src="/js/sidebar/titlecloak.js"></script>
-  <script src="/js/themes/theme.js"></script>
-  <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css" />
+  <script src="/js/faviconcloak.js"></script>
+  <script src="/js/titlecloak.js"></script>
+  <script src="/js/theme.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/effects/fadein.js"></script>
+  <script src="/js/fadein.js"></script>
 
   <title id="page-title">Polaris</title>
 
@@ -25,42 +24,15 @@
 <body data-theme="flamingo">
   <div id="background">
     <div id="loadnav"></div>
-    <script src="/js/misc/all.js"></script>
-    <script src="/js/navbar/navbar.js"></script>
-
-    <div class="sidebar">
-      <h1 class="sidebar-header">Themes</h1>
-      <div class="menu">
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-flamingo.css')">Flamingo</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-dark.css')">Dark</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-frost.css')">Frost</button>
-        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-crimson.css')">Crimson</button>
-        <script src="/js/themes/theme.js"></script>
-      </div>
-      <hr class="rounded" />
-      <h1 class="sidebar-header">Cloaks</h1>
-      <div class="menu">
-        <button class="themebutton" onclick="changeTitle('Google')"
-          data-favicon="/assets/fonts/icons/Google.ico">Google</button>
-        <button class="themebutton" onclick="changeTitle('Canvas')"
-          data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
-        <button class="themebutton" onclick="changeTitle('Drive')"
-          data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
-        <button class="themebutton" onclick="changeTitle('Gmail')"
-          data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
-      </div>
-      <div class="menu">
-        <button style="width: 15vh; margin-top: 40vh;" class="themebutton"
-          onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')"
-          data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
-      </div>
-    </div>
-    <script src="/js/sidebar/sidebar.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/sidebar.js"></script>
+    
     <div class="cardcontainer" id="card-container">
       <div id="spinner-container"></div>
     </div>
   </div>
-  <script src="/js/effects/cardhover.js"></script>
+  <script src="/js/cardhover.js"></script>
   <script>
     const spinner = document.getElementById("spinner-container");
     spinner.innerHTML = '<div class="spinner"></div>';
