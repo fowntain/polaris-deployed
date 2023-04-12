@@ -12,11 +12,37 @@
     user-select: none;
 }
 
+.credits {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 999999999;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.box {
+    padding: 50px;
+    background: #fff;
+    color: #000;
+    border-radius: 4vh;
+    box-shadow: 0vh 0.75vh 1.5vh 0vh black;
+}
+
+.box>h1 {
+    color: #000;
+}
+
 h1 {
     font-size: 60px;
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
+}
+
+h1.medium {
+    font-size: 40px;
 }
 
 input {
