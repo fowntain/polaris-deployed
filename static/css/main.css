@@ -12,6 +12,10 @@
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .credits {
     width: 50vw;
     height: 50vh;
@@ -25,13 +29,10 @@
 .box {
     padding: 50px;
     background: #fff;
-    color: #000;
+    color: #fff;
     border-radius: 4vh;
     box-shadow: 0vh 0.75vh 1.5vh 0vh black;
-}
-
-.box>h1 {
-    color: #000;
+    background: rgba(0, 0, 0, 0.75);
 }
 
 h1 {
@@ -75,7 +76,7 @@ input::placeholder {
 }
 
 .mainpage-box {
-    background-color: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 2vh;
     margin: auto;
     width: 30vh;

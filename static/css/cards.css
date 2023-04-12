@@ -6,7 +6,7 @@
   border-radius: 3.25vh;
   font-size: 1.75rem;
   color: #fff;
-  background-color: #2e2e2e;
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   text-align: center;
