@@ -22,4 +22,4 @@ setTimeout(() => {
     } else {
         changeTheme('flamingo');
     }
-}, 1);
+}, 100);
