@@ -29,7 +29,7 @@
     <button class="themebutton" onclick="changeTheme('dark')">Dark</button>
     <button class="themebutton" onclick="changeTheme('frost')">Frost</button>
     <button class="themebutton" onclick="changeTheme('crimsion')">Crimson</button>
-    <script src="/js/theme.js"></script>
+    <script src="/js/themes/theme.js"></script>
   </div>
   <hr class="rounded">
   <h1 class="sidebar-header">Cloaks</h1>
@@ -48,12 +48,11 @@
       document.getElementById('page-title').innerHTML = newTitle;
       localStorage.setItem('pageTitle', newTitle);
     }
-
     window.onload = function () {
-      let savedTitle = localStorage.getItem('pageTitle');
+      var savedTitle = localStorage.getItem('pageTitle');
       if (savedTitle) {
         document.getElementById('page-title').innerHTML = savedTitle;
-        
+      }
     }                                           
   </script>
   <script>

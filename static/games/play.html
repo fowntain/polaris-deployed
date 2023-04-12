@@ -2,14 +2,21 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/iframe.css" />
+  <link rel="stylesheet" href="/css/main/spinner.css" />
+  <link rel="stylesheet" href="/css/main/main.css" />
+  <link rel="stylesheet" href="/css/buttons/buttons.css" />
+  <link rel="stylesheet" href="/css/navbar/navbar.css" />
+  <link rel="stylesheet" href="/css/sidebar/sidebar.css" />
+  <link rel="stylesheet" href="/css/buttons/cards.css" />
+  <link rel="stylesheet" href="/css/iframe/iframe.css" />
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/js/faviconcloak.js"></script>
-  <script src="/js/titlecloak.js"></script>
-  <script src="/js/theme.js"></script>
-  <script src="/js/fadein.js"></script>
+  <script src="/js/sidebar/faviconcloak.js"></script>
+  <script src="/js/sidebar/titlecloak.js"></script>
+  <script src="/js/themes/theme.js"></script>
+  <link id="stylesheet" rel="stylesheet" href="/css/themes/theme-flamingo.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/effects/fadein.js"></script>
 
   <title id="page-title">Polaris</title>
   
@@ -23,13 +30,43 @@
 </head>
 
 <body data-theme="flamingo">
-  <div class="background">
-
+  <div id="background">
+    <!--navbar-->
     <div id="loadnav"></div>
-    <script src="/js/all.js"></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/sidebar.js"></script>
-
+    <script src="/js/misc/all.js"></script> <!-- very cool loader -->
+    <script src="/js/navbar/navbar.js"></script>
+    <!--end navbar-->
+    <!--sidebar-->
+    <div class="sidebar">
+      <h1 class="sidebar-header">Themes</h1>
+      <div class="menu">
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-flamingo.css')">Flamingo</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-dark.css')">Dark</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-frost.css')">Frost</button>
+        <button class="themebutton" onclick="changeStylesheet('/css/themes/theme-crimson.css')">Crimson</button>
+        <script src="/js/themes/theme.js"></script>
+      </div>
+      <hr class="rounded" />
+      <h1 class="sidebar-header">Cloaks</h1>
+      <div class="menu">
+        <button class="themebutton" onclick="changeTitle('Google')"
+          data-favicon="/assets/fonts/icons/Google.ico">Google</button>
+        <button class="themebutton" onclick="changeTitle('Canvas')"
+          data-favicon="/assets/fonts/icons/Canvas.ico">Canvas</button>
+        <button class="themebutton" onclick="changeTitle('Drive')"
+          data-favicon="/assets/fonts/icons/Drive.ico">Drive</button>
+        <button class="themebutton" onclick="changeTitle('Gmail')"
+          data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
+      </div>
+      <div class="menu">
+        <button style="width: 15vh; margin-top: 40vh;" class="themebutton"
+          onclick="changeTitle('Polaris');changeStylesheet('/css/themes/theme-flamingo.css')"
+          data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
+      </div>
+    </div>
+    <script src="/js/sidebar/sidebar.js"></script>
+    <!--end sidebar-->
+    <!--AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-->
     <iframe id="game-frame" scrolling="no" frameborder="0" width="60%" height="64%" cellspacing="0"
       src="https://example.com"></iframe>
     <div id="game-options">
@@ -44,14 +81,21 @@
         </table>
       </div>
       <div class="icons-options">
-          <i class="fa-solid fa-thumbs-up" style="padding-right: 10px; cursor: pointer; color: #ffffff;"></i>
-          <i class="fa-solid fa-heart" style="padding-right: 10px; cursor: pointer; color: #ffffff;"></i>
-          <i class="fa-solid fa-expand" style="padding-right: 10px; cursor: pointer; color: #ffffff; cursor: pointer;" onclick="fullscreen()"></i>
+        <p>
+        <p style="padding-right: 10px; cursor: pointer;">
+          <i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i>
+        </p>
+        <p style="padding-right: 10px; cursor: pointer;">
+          <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+        </p>
+        <p>
+          <i class="fa-solid fa-expand" style="color: #ffffff; cursor: pointer;" onclick="fullscreen()"></i></a>
+        </p>
       </div>
     </div>
-    <script src="/js/fullscreen.js"></script>
-    <script src="/js/setdata.js"></script>
-    <script src="/js/like.js"></script>
+    <script src="/js/iframe/fullscreen.js"></script>
+    <script src="/js/iframe/setdata.js"></script>
+    <script src="/js/iframe/like.js"></script>
   </div>
 </body>
 
