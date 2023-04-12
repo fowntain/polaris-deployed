@@ -28,6 +28,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   z-index: 100;
+  display: flex;
 }
 
 .navbar-container {
@@ -37,18 +38,32 @@
   align-items: center;
 }
 
-.menu-items {
-  order: 2;
+.right {
+  position: absolute;
   display: flex;
+  right: 50px;
 }
 
 .logo {
-  order: 1;
-  font-size: 6vh;
-  font-family: 'Lato', sans-serif;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
 
-.menu-items li {
+.title {
+  margin: 15px;
+  cursor: pointer;
+  font-size: 40px;
+  margin-left: 0px;
+}
+
+.navbar>a {
+  display: flex;
+}
+
+.right li {
   list-style: none;
   margin-left: 2.5vh;
   font-size: 3vh;
@@ -135,7 +150,7 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  .navbar .menu-items {
+  .navbar .right {
     padding-top: 15vh;
     background: #1e2124;
     height: 100vh;
@@ -151,7 +166,7 @@
     font-family: "Lato";
   }
 
-  .navbar .menu-items li {
+  .navbar .right li {
     margin-bottom: 1.8rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -166,7 +181,7 @@
     font-family: "Lilita One";
   }
 
-  .navbar-container input[type="checkbox"]:checked~.menu-items {
+  .navbar-container input[type="checkbox"]:checked~.right {
     transform: translateX(0);
   }
 

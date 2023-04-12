@@ -1,24 +1,40 @@
-<title id="page-title">Polaris</title>
-<link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
 <nav class="navbar">
+  <a href="/">
+    <img class="logo" src="/assets/icons/polaris.png" />
+    <h1 class="title">Polaris</h1>
+  </a>
+
   <div class="navbar-container container">
     <input type="checkbox" name="" id="" />
+
     <div class="hamburger-lines">
       <span class="line line1"></span>
       <span class="line line2"></span>
       <span class="line line3"></span>
     </div>
-    <ul class="menu-items">
-      <li><a href="https://discord.gg/95yyQkDq5S" target="_blank"><i class="fa-brands fa-discord fa-lg"></i></a></li>
-      <li><a class="navhighlight" href="/">Home</a></li>
-      <li><a href="/games">Games</a></li>
-      <li><a href="/apps">Apps</a></li>
-      <li><a href="/unb">Unblocker</a></li>
+
+    <ul class="right">
+      <!--<li><a href="https://discord.gg/95yyQkDq5S" target="_blank"><i class="fa-brands fa-discord fa-lg"></i></a></li>-->
       <li>
-        <h3 onclick="openSidebar()">Settings</h3>
+        <a class="navhighlight" href="/">Home</a>
+      </li>
+
+      <li>
+        <a href="/games">Games</a>
+      </li>
+
+      <li>
+        <a href="/apps">Apps</a>
+      </li>
+
+      <li>
+        <a href="/unb">Unblocker</a>
+      </li>
+
+      <li>
+        <a href="#settings" onclick="openSidebar()">Settings</a>
       </li>
     </ul>
-    <h1 class="logo">Polaris</h1>
   </div>
 </nav>
 
@@ -29,7 +45,6 @@
     <button class="themebutton" onclick="changeTheme('dark')">Dark</button>
     <button class="themebutton" onclick="changeTheme('frost')">Frost</button>
     <button class="themebutton" onclick="changeTheme('crimsion')">Crimson</button>
-    <script src="/js/themes/theme.js"></script>
   </div>
   <hr class="rounded">
   <h1 class="sidebar-header">Cloaks</h1>
@@ -43,35 +58,8 @@
     <button class="themebutton" onclick="changeTitle('Gmail')"
       data-favicon="/assets/fonts/icons/Gmail.ico">Gmail</button>
   </div>
-  <script>
-    function changeTitle(newTitle) {
-      document.getElementById('page-title').innerHTML = newTitle;
-      localStorage.setItem('pageTitle', newTitle);
-    }
-    window.onload = function () {
-      var savedTitle = localStorage.getItem('pageTitle');
-      if (savedTitle) {
-        document.getElementById('page-title').innerHTML = savedTitle;
-      }
-    }                                           
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("button").click(function () {
-        var favicon = $(this).data("favicon");
-        $("link[rel='icon']").attr("href", favicon);
-        localStorage.setItem("favicon", favicon);
-      });
-
-      var fav = localStorage.getItem("favicon");
-      if (fav !== null) {
-        $("link[rel='icon']").attr("href", fav);
-      }
-    });
-  </script>
   <div class="menu">
-    <button style="width:15vh; margin-top: 40vh;" class="themebutton"
-      onclick="changeTitle('Polaris');changeTheme('flamingo')"
+    <button style="width:15vh; margin-top: 40vh;" class="themebutton" onclick="changeTheme('flamingo')"
       data-favicon="/assets/fonts/icons/favicon.ico">Reset</button>
   </div>
 </div>

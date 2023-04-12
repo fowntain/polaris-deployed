@@ -14,7 +14,7 @@ function changeTheme(theme) {
     }
 }
 
-window.addEventListener('load', function () {
+setTimeout(() => {
     var theme = localStorage.getItem('theme');
 
     if (theme) {
@@ -22,4 +22,4 @@ window.addEventListener('load', function () {
     } else {
         changeTheme('flamingo');
     }
-});
+}, 1);
