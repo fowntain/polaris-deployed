@@ -12,6 +12,10 @@
     user-select: none;
 }
 
+body {
+    opacity: 0.5;
+}
+
 a {
     text-decoration: none;
 }
@@ -61,7 +65,7 @@ input::placeholder {
     color: #fff;
 }
 
-.content {
+.centered {
     position: absolute;
     top: 40%;
     left: 50%;

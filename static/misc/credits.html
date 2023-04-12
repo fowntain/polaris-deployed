@@ -1,24 +1,29 @@
 <link rel="stylesheet" href="/css/main.css">
-<div class="box">
-    <h1 class="medium">Credits</h1>
-    <p><!--Somebody put something about the website here--></p>
-    <p>We do not own any of the games on pliaris and all games belong to their respective owners</p>
-    <br>
-    <h1 class="medium">Contributors</h1>
-    <ul>
-        <li data-github=plastics-eater></li>
-        <li data-github=VillansRule></li>
-        <li data-github=3kh0></li>
-        <li data-github=fowntain></li>
-        <li data-github=Russell2259></li>
-        <li data-github=Genarcy></li>
-        <li data-github=beforeblazergithub></li>
-        <li data-github=NotRubi></li>
-    </ul>
 
-    <script>
-        document.querySelectorAll("[data-github]").forEach((item) => {
-            item.innerHTML = `<a href="https://github.com/${item.dataset.github}" target="_top" style="color: #fff;">${item.dataset.github}</a>`;
-        });
-    </script>
-</div>
+<style>
+    * {
+        color: #fff;
+    }
+</style>
+
+<h1 class="medium">Credits</h1>
+<p><!--Somebody put something about the website here--></p>
+<p>We do not own any of the games on pliaris and all games belong to their respective owners</p>
+<br>
+<h1 class="medium">Contributors</h1>
+<ul>
+    <li data-github=plastics-eater></li>
+    <li data-github=VillansRule></li>
+    <li data-github=3kh0></li>
+    <li data-github=fowntain></li>
+    <li data-github=Russell2259></li>
+    <li data-github=Genarcy></li>
+    <li data-github=beforeblazergithub></li>
+    <li data-github=NotRubi></li>
+</ul>
+
+<script>
+    document.querySelectorAll("[data-github]").forEach((item) => {
+        item.innerHTML = `<a href="https://github.com/${item.dataset.github}" target="_top" style="color: #fff;">${item.dataset.github}</a>`;
+    });
+</script>

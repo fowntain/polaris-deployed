@@ -1,5 +1,5 @@
-document.addEventListener("keydown", function(event) {
-  if (event.code === "KeyF") fullscreen();
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'KeyF') fullscreen();
 });
 
 function fullscreen() {

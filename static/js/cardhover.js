@@ -3,15 +3,15 @@ const tiltEffectSettings = {
   perspective: 1000, // transform perspective, the lower the more extreme the tilt gets (pixels (px))
   scale: 1.05, // transform scale - 2 = 200%, 1.5 = 150%, etc..
   speed: 500, // speed (transition-duration) of the enter/exit transition (milliseconds (ms))
-  easing: "cubic-bezier(.03,.98,.52,.99)" // easing (transition-timing-function) of the enter/exit transition
+  easing: 'cubic-bezier(.03,.98,.52,.99)' // easing (transition-timing-function) of the enter/exit transition
 };
 
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
-  card.addEventListener("mouseenter", cardMouseEnter);
-  card.addEventListener("mousemove", cardMouseMove);
-  card.addEventListener("mouseleave", cardMouseLeave);
+  card.addEventListener('mouseenter', cardMouseEnter);
+  card.addEventListener('mousemove', cardMouseMove);
+  card.addEventListener('mouseleave', cardMouseLeave);
 });
 
 function cardMouseEnter(event) {
@@ -47,6 +47,6 @@ function setTransition(event) {
   clearTimeout(card.transitionTimeoutId);
   card.style.transition = `transform ${tiltEffectSettings.speed}ms ${tiltEffectSettings.easing}`;
   card.transitionTimeoutId = setTimeout(() => {
-    card.style.transition = "";
+    card.style.transition = '';
   }, tiltEffectSettings.speed);
 }

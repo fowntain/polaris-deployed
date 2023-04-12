@@ -1,16 +1,20 @@
-$(document).ready(function () {
-  $("body").css("opacity", "1");
-});
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.body.style.opacity = 1;
+  }, 1000);
+})
 
-$(window).on("beforeunload", function () {
-  $("body").css("opacity", "0.5");
-});
+window.onbeforeunload = () => {
+  document.body.style.opacity = '0.5';
+}
 
-$(document).on("click", "a", function (event) {
-  event.preventDefault();
-  var url = $(this).attr("href");
-  $("body").css("opacity", "0.5");
-  setTimeout(function () {
-    window.location.href = url;
-  }, 500);
-});
+document.querySelectorAll('a').forEach(hyperlink => {
+  hyperlink.onclick = (e) => {
+    e.preventDefault();
+    document.body.style.opacity = '0.5';
+
+    setTimeout(() => {
+      window.location.href = url;
+    }, 500);
+  }
+})
