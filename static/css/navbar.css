@@ -16,7 +16,6 @@
 }
 
 .container {
-  /*max-width: 1200px;*/
   width: 90%;
   margin: auto;
 }
@@ -41,20 +40,20 @@
 .right {
   position: absolute;
   display: flex;
-  right: 50px;
+  right: 5vh;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 1vh;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 1vh;
 }
 
 .title {
   cursor: pointer;
-  font-size: 40px;
+  font-size: 4vh;
   margin: auto;
 }
 
@@ -75,7 +74,7 @@
   transition: color 0.3s ease-in-out;
   font-family: "Lato";
   margin: auto;
-  margin: 20px 20px 0px 20px;
+  margin: 2vh 2vh 0vh 2vh;
 }
 
 .navbar h3 {
@@ -88,7 +87,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 210px) {
+@media (max-width: 21vh) {
   .navbar {
     opacity: 0.95;
   }
@@ -199,7 +198,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 50vh) {
   .navbar-container input[type="checkbox"]:checked~.logo {
     display: none;
   }
