@@ -2,5 +2,4 @@
   <img src="https://raw.githubusercontent.com/polarisdevs/polaris-V1/main/static/assets/icons/polaris.png" width="190px"/>
 </p>
 <h1 align="center">Polaris</h1>
-<center>The new unblocker.</center>
-
+The future of unblocking.
