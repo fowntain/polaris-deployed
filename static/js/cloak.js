@@ -14,6 +14,10 @@ const cloaks = {
     'gmail': {
         icon: 'https://www.google.com/s2/favicons?domain=https://mail.google.com&sz=50',
         title: 'Inbox (1) - school@is.stupid - School is Stupid Mail'
+    },
+    'default': {
+        icon: '/favicon.ico',
+        title: 'Polaris'
     }
 };
 
@@ -42,6 +46,9 @@ function resetCloak() {
 
 const cloakData = localStorage.getItem('cloak');
 
-if (cloakData !== 'default') {
+if (cloakData) {
     setCloak(cloakData);
+} else {
+    setCloak('default');
+    location.reload();
 }
