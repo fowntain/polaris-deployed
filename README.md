@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/polarisdevs/polaris-V1/main/static/assets/icons/polaris.png" width="190px"/>
 </p>
 <h1 align="center">Polaris</h1>
-The future of unblocking.
+The future of school gaming.
 
 ### Hosting Localy
 Make sure you have [git](https://git-scm.com/) and [nodejs](https://nodejs.org/) installed
