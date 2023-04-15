@@ -1,4 +1,4 @@
-body[data-theme="frost"]>#background {
+body[data-theme="frost"] #background {
     background: linear-gradient(304deg, #000000, #08c1ff);
     background-size: 120% 120%;
     animation: frost-gradient 12s ease infinite;
@@ -25,20 +25,20 @@ body[data-theme="frost"]>#background {
     }
 }
 
-body[data-theme="frost"]>.navbar a:hover {
+body[data-theme="frost"] .navbar a:hover {
     color: #36c5f5;
 }
 
-body[data-theme="frost"]>.navbar h3:hover {
+body[data-theme="frost"] .navbar h3:hover {
     color: #36c5f5;
     cursor: pointer;
 }
 
-body[data-theme="frost"]>#loader .loader {
+body[data-theme="frost"] #loader .loader {
     border-top-color: #36c5f5;
 }
 
-body[data-theme="flamingo"]>#background {
+body[data-theme="flamingo"] #background {
     background: linear-gradient(304deg, #ff8800, #f507e2);
     background-size: 120% 120%;
     animation: flamingo-gradient 12s ease infinite;
@@ -65,20 +65,20 @@ body[data-theme="flamingo"]>#background {
     }
 }
 
-body[data-theme="flamingo"]>.navbar a:hover {
+body[data-theme="flamingo"] .navbar a:hover {
     color: #f740dc;
 }
 
-body[data-theme="flamingo"]>.navbar h3:hover {
+body[data-theme="flamingo"] .navbar h3:hover {
     color: #f740dc;
     cursor: pointer;
 }
 
-body[data-theme="flamingo"]>#loader .loader {
+body[data-theme="flamingo"] #loader .loader {
     border-top-color: #f740dc;
 }
 
-body[data-theme="dark"]>#background {
+body[data-theme="dark"] #background {
     background-color: #36393e;
     position: absolute;
     top: 0;
@@ -89,25 +89,25 @@ body[data-theme="dark"]>#background {
     width: 100%;
 }
 
-body[data-theme="dark"]>.startpagename {
+body[data-theme="dark"] .startpagename {
     text-shadow: 1.2vmin 1.2vmin #d93beb, 1.2vmin 1.2vmin 10vmin #d93beb;
     color: rgb(255, 255, 255);
 }
 
-body[data-theme="dark"]>.navbar a:hover {
+body[data-theme="dark"] .navbar a:hover {
     color: #36393e;
 }
 
-body[data-theme="dark"]>.navbar h3:hover {
+body[data-theme="dark"] .navbar h3:hover {
     color: #36393e;
     cursor: pointer;
 }
 
-body[data-theme="dark"]>#loader .loader {
+body[data-theme="dark"] #loader .loader {
     border-top-color: #36393e;
 }
 
-body[data-theme="crimsion"]>#background {
+body[data-theme="crimsion"] #background {
     background: linear-gradient(304deg, #000000, #dc143c);
     background-size: 120% 120%;
     animation: crimsion-gradient 12s ease infinite;
@@ -134,15 +134,15 @@ body[data-theme="crimsion"]>#background {
     }
 }
 
-body[data-theme="crimsion"]>.navbar a:hover {
+body[data-theme="crimsion"] .navbar a:hover {
     color: #e31919;
 }
 
-body[data-theme="crimsion"]>.navbar h3:hover {
+body[data-theme="crimsion"] .navbar h3:hover {
     color: #e31919;
     cursor: pointer;
 }
 
-body[data-theme="crimsion"]>#loader .loader {
+body[data-theme="crimsion"] #loader .loader {
     border-top-color: #e31919;
 }
