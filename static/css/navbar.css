@@ -48,6 +48,7 @@
   height: 6vh;
   border-radius: 1vh;
   cursor: pointer;
+  margin: auto;
   margin-right: 1vh;
 }
 
@@ -74,7 +75,7 @@
   transition: color 0.3s ease-in-out;
   font-family: "Lato";
   margin: auto;
-  margin: 2vh 2vh 0vh 2vh;
+  margin-left: 2vh;
 }
 
 .navbar h3 {
