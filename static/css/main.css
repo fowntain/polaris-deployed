@@ -32,7 +32,6 @@ a {
 
 .box {
     padding: 5vh;
-    background: #fff;
     color: #fff;
     border-radius: 4vh;
     box-shadow: 0vh 0.75vh 1.5vh 0vh black;
@@ -47,7 +46,7 @@ h1 {
 }
 
 h1.medium {
-    font-size: 4vh;
+    font-size: 12vh;
 }
 
 input {
