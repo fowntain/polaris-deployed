@@ -59,7 +59,7 @@
 .title {
   cursor: pointer;
   font-size: 4vh;
-  margin: auto;
+  left: 5vh;
 }
 
 .navbar>a {
