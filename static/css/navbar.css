@@ -142,3 +142,20 @@
     display: none;
   }
 }
+
+@media (max-width: 21vh) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 9.6vh;
+  }
+
