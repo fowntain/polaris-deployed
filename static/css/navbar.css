@@ -47,19 +47,11 @@
   right: 5vh;
 }
 
-.logo {
-  width: 6vh;
-  height: 6vh;
-  border-radius: 1vh;
-  cursor: pointer;
-  margin: auto;
-  margin-right: 1vh;
-}
-
 .title {
   cursor: pointer;
   font-size: 4vh;
-  left: 5vh;
+  right: 5vh;
+  margin: auto;
 }
 
 .navbar>a {
