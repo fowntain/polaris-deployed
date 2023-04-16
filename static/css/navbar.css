@@ -10,20 +10,15 @@
   font-size: 62.5%;
 }
 
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-  display: none;
-}
-
 .container {
   width: 90%;
   margin: auto;
 }
 
 .navbar {
-  box-shadow: 0vh 0.75vh 1vh 0.2vh rgba(0, 0, 0, .5);
+  box-shadow: 0vh 0.75vh 1vh 0.2vh rgba(0, 0, 0, .85);
   position: fixed;
-  width: 100%;
+  width: 95%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   z-index: 100;
