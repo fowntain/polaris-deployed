@@ -88,61 +88,6 @@
   cursor: pointer;
 }
 
-
-  .navbar .right {
-    padding-top: 15vh;
-    background: #1e2124;
-    height: 100vh;
-    max-width: 45vh;
-    transform: translate(-150%);
-    display: flex;
-    flex-direction: column;
-    margin-left: -6vh;
-    padding-left: 6vh;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 0.75vh 0vh 1.5vh 0vh #2e2e2e;
-    overflow: scroll;
-    font-family: "Lato";
-  }
-
-  .navbar .right li {
-    margin-bottom: 1.8rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: "Lato";
-  }
-
-  .logo {
-    position: absolute;
-    top: 1.5vh;
-    right: 2.2vh;
-    font-size: 2.5rem;
-    font-family: "Lilita One";
-  }
-
-  .navbar-container input[type="checkbox"]:checked~.right {
-    transform: translateX(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
-    transform: rotate(45deg);
-  }
-
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
-    transform: scaleY(0);
-  }
-
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
-    transform: rotate(-45deg);
-  }
-}
-
-@media (max-width: 50vh) {
-  .navbar-container input[type="checkbox"]:checked~.logo {
-    display: none;
-  }
-}
-
 @media (max-width: 21vh) {
   .navbar {
     opacity: 0.95;
@@ -158,7 +103,7 @@
     position: relative;
     height: 9.6vh;
   }
-  
+
   .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
@@ -206,3 +151,40 @@
     transition: transform 0.3s ease-in-out;
   }
 
+  .navbar .right {
+    padding-top: 15vh;
+    background: #1e2124;
+    height: 100vh;
+    max-width: 45vh;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -6vh;
+    padding-left: 6vh;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0.75vh 0vh 1.5vh 0vh #2e2e2e;
+    overflow: scroll;
+    font-family: "Lato";
+  }
+
+  .navbar .right li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Lato";
+  }
+
+  .logo {
+    position: absolute;
+    top: 1.5vh;
+    right: 2.2vh;
+    font-size: 2.5rem;
+    font-family: "Lilita One";
+  }
+
+
+@media (max-width: 50vh) {
+  .navbar-container input[type="checkbox"]:checked~.logo {
+    display: none;
+  }
+}
