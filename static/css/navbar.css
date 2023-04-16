@@ -25,9 +25,11 @@
   position: fixed;
   width: 95%;
   background-color: rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   z-index: 100;
-  display: flex;
+  display: block;
 }
 
 .navbar-container {
