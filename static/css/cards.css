@@ -43,7 +43,7 @@
 
 .cardcontainer {
   display: flex;
-  margin-top: 10vh;
+  margin-top: 15vh;
   flex-direction: row;
   order: 0;
   flex-grow: 0;

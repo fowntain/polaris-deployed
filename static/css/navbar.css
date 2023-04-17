@@ -21,13 +21,17 @@
 }
 
 .navbar {
-  box-shadow: 0vh 0.75vh 1vh 0.2vh rgba(0, 0, 0, .5);
+  box-shadow: 0vh 0.75vh 1.5vh 0vh black;
   position: fixed;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.80);
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2.5vh;
   color: #fff;
   z-index: 100;
   display: flex;
+  border-radius: 5vh;
 }
 
 .navbar-container {
@@ -43,18 +47,10 @@
   right: 5vh;
 }
 
-.logo {
-  width: 6vh;
-  height: 6vh;
-  border-radius: 1vh;
-  cursor: pointer;
-  margin: auto;
-  margin-right: 1vh;
-}
-
 .title {
   cursor: pointer;
   font-size: 4vh;
+  margin-left: 5vh;
   margin: auto;
 }
 
